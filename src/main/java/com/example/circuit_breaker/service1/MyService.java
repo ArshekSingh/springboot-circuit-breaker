@@ -16,7 +16,7 @@ public class MyService {
 
     private static final Logger logger = LoggerFactory.getLogger(MyService.class);
 
-    @CircuitBreaker(name = "myService", fallbackMethod = "fallbackMethod")
+//    @CircuitBreaker(name = "myService", fallbackMethod = "fallbackMethod")
     @Retry(name = "myService", fallbackMethod = "fallbackMethod")
     public String externalApiCall() {
         // Simulating an API call or any external service call that might fail
